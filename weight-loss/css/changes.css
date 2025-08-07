@@ -1,0 +1,124 @@
+.changes {
+  padding-left: 200px;
+  padding-right: 200px;
+  padding-top: 200px;
+}
+.changes_wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+.changes_title {
+  color: var(--Charcoal-gray, #111);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 52px;
+  font-weight: 700;
+  line-height: 100%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+.changes_subtitle {
+  color: var(--Charcoal-gray, #111);
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+  max-width: 774px;
+  margin: 0 auto;
+  margin-bottom: 96px;
+}
+.changes_content {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.changes_content_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 370px;
+}
+.changes_content_image {
+  width: 190px;
+  height: 190px;
+
+  margin-bottom: 12px;
+}
+.changes_content_title {
+  color: var(--Charcoal-gray, #111);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+}
+.changes_content_text {
+  color: var(--Charcoal-gray, #111);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 160%;
+  max-width: 320px;
+  width: 100%;
+}
+.ch_slide {
+  height: auto !important;
+  width: auto;
+  align-items: center !important;
+  justify-content: center !important;
+}
+
+@media (max-width: 1700px) {
+  .changes {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (max-width: 1600px) {
+  .changes {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 1300px) {
+  .changes {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 800px) {
+  .changes_content_title {
+    font-size: 26px;
+  }
+  .changes_content_text {
+    font-size: 16px;
+  }
+  .changes_title {
+    font-size: 26px;
+    text-align: left;
+    margin-bottom: 18px;
+  }
+  .changes_subtitle {
+    font-size: 16px;
+    text-align: left;
+    margin-bottom: 18px;
+  }
+  .changes_content_image {
+    width: 160px;
+    height: 160px;
+  }
+  .changes {
+    padding-top: 100px;
+  }
+}
+.swiper-pagination4 {
+  bottom: initial !important;
+  padding-top: 24px;
+  text-align: center;
+}

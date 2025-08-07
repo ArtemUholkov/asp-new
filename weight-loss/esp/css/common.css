@@ -1,0 +1,170 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
+}
+
+/*CSS RESET START*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font-size: 100%;
+    vertical-align: baseline;
+    background: transparent;
+}
+
+body {
+    line-height: 1;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote,
+q {
+    quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
+}
+
+:focus {
+    outline: 0;
+}
+
+ins {
+    text-decoration: none;
+}
+
+del {
+    text-decoration: line-through;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/*CSS RESET END*/
+
+/*COLOR VARIABLES START*/
+:root {
+    --light-blue-primary: #00e0ff;
+    --decot: #34b4f4;
+    --Charcoal-gray: #fff;
+    --dark-bcg-1: #181c21;
+    --dark-bcg-2: #090d11;
+    --white: #fff;
+    --Light: #fefefe;
+    --dark-blue: #0d2ed2;
+    --main-color: #d3a221;
+}
+
+/*COLOR VARIABLES END*/
+
+/*COMMONT STYLES START*/
+html {
+    scroll-behavior: smooth;
+}
+
+.main_button {
+    max-width: 268px;
+    display: flex;
+    padding: 20px 80px;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8.611px;
+    border-radius: 77.5px;
+    border: 2.583px solid var(--main-color);
+    transition: all 0.3s;
+    font-family: 'Roboto', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    color: #f5a302;
+}
+
+.main_button:hover {
+    background-color: var(--main-color);
+    transition: all 0.3s;
+    text-decoration: none;
+    color: var(--Charcoal-gray, #111);
+}
+
+body {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    z-index: 2;
+    background: #181c21;
+}

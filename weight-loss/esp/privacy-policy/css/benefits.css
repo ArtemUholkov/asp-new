@@ -1,0 +1,434 @@
+.benefits {
+    padding: 100px 0 0;
+    position: relative;
+}
+
+.benefits_wrapper {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.titles_wrapper {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 42px;
+    padding-left: 200px;
+}
+
+.section_title {
+    color: var(--Charcoal-gray, #111);
+    font-family: 'Montserrat';
+    font-size: 52px;
+    font-weight: 700;
+    line-height: 120%;
+    text-transform: uppercase;
+    max-width: 571px;
+}
+
+.benefits_subtitle {
+    color: var(--white, 'white');
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 160%;
+    max-width: 667px;
+}
+
+.benefits_columns_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.benefits_item_wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.benefits_item {
+    position: relative;
+    border-radius: 30px;
+    /* Adjust as needed */
+    overflow: hidden;
+    /* Ensures the content respects the border radius */
+    width: 100%;
+    padding-left: 43px;
+    padding-top: 39px;
+    height: 316px;
+    width: 493px;
+    background-color: var(--dark-bcg-2);
+    z-index: -1;
+    /* Add background color */
+}
+
+.benefits_item::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    /* Ensure the gradient is behind the content */
+    border-radius: 30px;
+    /* Matches the border-radius of the main element */
+    padding: 1px;
+    /* Adjust this value for the thickness of the gradient border */
+    background: var(--main-color);
+    /* Gradient from top to bottom */
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    /* Masks the content area */
+    mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+}
+
+.benefits_item>* {
+    position: relative;
+    z-index: 1;
+    /* Ensure content appears above the gradient border */
+}
+
+.benefits_item_title {
+    background: var(--main-color);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 30px;
+    font-weight: 700;
+    line-height: 120%;
+    /* 36px */
+    text-transform: uppercase;
+    max-width: 385px;
+    margin-bottom: 12px;
+    position: relative;
+    top: 0;
+    transition: all 0.3s;
+}
+
+.benefits_item_text {
+    color: var(--Charcoal-gray, #111);
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 160%;
+    max-width: 260px;
+    position: relative;
+    top: 0;
+    transition: all 0.3s;
+}
+
+.benefits_item_image {
+    position: absolute;
+    right: -15px;
+    bottom: -50px;
+
+    transition: all 0.3s;
+}
+
+.b_fst_img {
+    transform: rotate(7deg);
+    width: 229px;
+    height: 229px;
+}
+
+.b_snd_img {
+    transform: rotate(3deg);
+    width: 290px;
+    height: 290px;
+    right: -50px;
+}
+
+.gradient1 {
+    position: absolute;
+    top: 200px;
+    right: 100px;
+    width: 400px;
+    height: 400px;
+    background: var(--main-color);
+    filter: blur(200px) brightness(1.1);
+    /* Increased blur and brightness */
+    transform: translate(-95%, -50%);
+    z-index: -1;
+    animation: glow71 3s infinite alternate;
+}
+
+@keyframes glow71 {
+    0% {
+        opacity: 0.8;
+        /* Increased opacity */
+        transform: translate(-60%, -50%) scale(1);
+    }
+
+    25% {
+        opacity: 1;
+        /* Peak brightness */
+        transform: translate(calc(-60% + 100px), calc(-50% + 50px)) scale(1.05);
+    }
+
+    50% {
+        opacity: 1;
+        /* Peak brightness */
+        transform: translate(calc(-60% - 100px), calc(-50% + 100px)) scale(1.1);
+    }
+
+    75% {
+        opacity: 0.9;
+        /* Slight fade */
+        transform: translate(calc(-60% - 50px), calc(-50% - 100px)) scale(1.05);
+    }
+
+    100% {
+        opacity: 0.8;
+        /* Return to initial glow */
+        transform: translate(calc(-60% + 100px), calc(-50% - 50px)) scale(1.1);
+    }
+}
+
+@media (min-width: 600px) {
+    .benefits_item:hover .benefits_item_title {
+        top: -350px;
+        transition: all 0.3s;
+    }
+
+    .benefits_item:hover .benefits_item_text {
+        top: -350px;
+        transition: all 0.3s;
+    }
+
+    .benefits_item:hover img {
+        transform: rotate(-20deg) scale(1.1);
+
+        right: 120px;
+        bottom: 50px;
+    }
+}
+
+@media (min-width: 600px) {
+    .item_two:hover img {
+        transform: rotate(-20deg) scale(1.1);
+
+        right: 120px;
+        bottom: 0;
+    }
+}
+
+.item_three {
+    width: 493px;
+    height: 480px;
+    position: relative;
+    top: 40px;
+}
+
+.three_woman {
+    display: none;
+}
+
+.b_trd_img {
+    width: 300px;
+    height: 282px;
+    right: 50px;
+    transform: rotate(10deg);
+}
+
+@media (min-width: 600px) {
+    .item_three:hover img {
+        transform: rotate(-15deg) scale(1.1);
+        right: 100px;
+        bottom: 100px;
+    }
+}
+
+.item_four {
+    width: 493px;
+    height: 464px;
+}
+
+.item_four_wrapper {
+    align-self: flex-end;
+    position: relative;
+}
+
+.b_fth_img {
+    width: 248.336px;
+    height: 248.336px;
+    bottom: 0;
+    right: 0;
+    transform: rotate(-7deg);
+}
+
+@media (min-width: 600px) {
+    .item_four:hover img {
+        transform: rotate(-7deg) scale(1.1);
+        right: 120px;
+        bottom: 120px;
+    }
+}
+
+.benefits_woman {
+    position: absolute;
+    top: -571px;
+    left: 0;
+}
+
+.text_three {
+    max-width: 308px;
+}
+
+.text_four {
+    max-width: 305px;
+}
+
+.mob_subt {
+    display: none;
+}
+
+.mySwiper2 {
+    display: none;
+}
+
+.swiper-pagination2 {
+    display: none;
+}
+
+@media (max-width: 1700px) {
+    .titles_wrapper {
+        padding-left: 50px;
+    }
+}
+
+@media (max-width: 1560px) {
+    .four_woman {
+        display: none;
+    }
+
+    .three_woman {
+        display: block;
+        left: initial;
+        right: 0;
+        top: -532px;
+    }
+
+    .benefits_columns_wrapper {
+        flex-wrap: wrap;
+    }
+}
+
+@media (max-width: 1270px) {
+    .three_woman {
+        display: none;
+    }
+
+    .gradient1 {
+        display: none;
+    }
+}
+
+@media (max-width: 1075px) {
+    .benefits_columns_wrapper {
+        flex-direction: column;
+    }
+
+    .item_three {
+        top: 0;
+    }
+
+    .item_four_wrapper {
+        align-self: center;
+    }
+}
+
+@media (max-width: 600px) {
+    .benefits_columns_wrapper {
+        display: none;
+    }
+
+    .titles_wrapper {
+        padding: 0;
+        margin-bottom: 24px;
+    }
+
+    .benefits {
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    .section_title {
+        font-size: 26px;
+        margin-bottom: 12px;
+    }
+
+    .benefits_subtitle {
+        font-size: 16px;
+        display: none;
+    }
+
+    .mob_subt {
+        display: block;
+    }
+
+    .mySwiper2 {
+        display: block;
+    }
+
+    .swiper-pagination2 {
+        display: block;
+    }
+
+    .benefits_item {
+        width: 327px;
+        height: 384px;
+    }
+
+    .item_four_wrapper {
+        align-self: initial;
+    }
+
+    .swiper-pagination2 {
+        bottom: initial !important;
+        padding-top: 24px;
+        text-align: center;
+    }
+
+    .benefits_item {
+        padding: 39px 23.297px 0px 33px;
+    }
+
+    .benefits_item_title {
+        font-size: 24px;
+        text-align: center;
+    }
+
+    .benefits_item_text {
+        font-size: 16px;
+    }
+
+    .benefits_item_image {
+        right: 40px;
+        bottom: -60px;
+    }
+
+    .b_snd_img {
+        right: 13px;
+        bottom: -83px;
+    }
+
+    .b_trd_img {
+        right: 38px;
+        bottom: -78px;
+        height: 250px;
+        width: 250px;
+    }
+
+    .b_slide {
+        align-items: center !important;
+        justify-content: center !important;
+        height: initial !important;
+    }
+}

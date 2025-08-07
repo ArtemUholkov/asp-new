@@ -1,0 +1,75 @@
+.cta {
+  padding: 200px 200px 0;
+}
+.cta_wrapper {
+  position: relative;
+  border-radius: 30px; /* Adjust as needed */
+  background-color: #fefefe; /* Solid background inside the border */
+  width: 100%;
+  margin: 0 auto;
+  padding: 50px 100px;
+  z-index: 1;
+  overflow: hidden;
+}
+
+.cta_wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: linear-gradient(to left, #ff00b8, #00e0ff); /* Gradient from right to left */
+  border-radius: inherit;
+  padding: 1px; /* Thickness of the gradient border */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  z-index: -1; /* Ensure the gradient stays behind the content */
+}
+
+.cta_title {
+  color: var(--white);
+  text-align: center;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 40px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1700px) {
+  .cta {
+    padding: 200px 100px 0;
+  }
+  .cta_wrapper {
+    padding: 30px 60px;
+  }
+}
+@media (max-width: 1500px) {
+  .cta {
+    padding: 200px 50px 0;
+  }
+  .cta_wrapper {
+    padding: 20px 30px;
+  }
+}
+@media (max-width: 1200px) {
+  .cta {
+    padding: 120px 20px 0;
+  }
+  .cta_wrapper {
+    padding: 0;
+    border-radius: 0;
+    background-color: transparent;
+  }
+  .cta_wrapper::before {
+    display: none;
+  }
+  .cta_title {
+    text-align: center;
+    font-size: 26px;
+  }
+}

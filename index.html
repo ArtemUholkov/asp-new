@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="icon" type="image/x-icon" href="images/global/favicon-32x32.png" />
+
+    <link rel="stylesheet" href="css/aos.css" />
+    <link rel="stylesheet" href="css/swiper.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <!-- Meta Pixel Code -->
+    <script>
+        !(function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s);
+        })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '23995060440173674');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display: none"
+            src="https://www.facebook.com/tr?id=23995060440173674&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5WZRQB63');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4KCLD8WTS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B4KCLD8WTS');
+    </script>
+</head>
+
+<body> <!-- Google Tag Manager (noscript) -->
+    <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-5WZRQB63" height="0" width="0"
+            style="display: none; visibility: hidden"></iframe></noscript>
+    <!-- End Google Tag Manager (noscript) -->
+    <header class="header">
+        <div class="header__wrapper mycontainer">
+            <nav class="header__navbar navbar">
+                <a href="/" class="header__logo-wrapper">
+                    <img src="images/global/logo2.png" alt="logo" class="header__logo header__logo--white" />
+                    <img src="images/global/logo2.png" alt="logo"
+                        class="header__logo header__logo--hide header__logo--color" />
+                </a>
+
+                <ul class="header__menu ">
+                    <li><a class="header__menu-item " href="#about-us">About Us</a></li>
+                    <li>
+                        <button class="header__menu-item header__menu-item--drop-down">
+                            Treatmens
+                            <img class="header__drop-icon" src="/images/icons/ic_drop-down.svg" alt="drop-down">
+                            <div class="header__drop-down-wrapper">
+                                <ul class="header__drop-down">
+                                    <li>
+                                        <a class="header__drop-donw-link" href="/sermorelin ">Sermorelin</a>
+                                    </li>
+                                    <li>
+                                        <a class="header__drop-donw-link" href="/trt">Trt</a>
+                                    </li>
+                                    <li>
+                                        <a class="header__drop-donw-link" href="/weight-loss">Weight Loss</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </button>
+                    </li>
+                    <li><a class="header__menu-item " href="#how-to-start">How to start</a></li>
+                    <li><a class="header__menu-item " href="#benefits">Benefits</a></li>
+                    <li><a class="header__menu-item" href="#reviews">Reviews</a></li>
+                </ul>
+                <div class="header__button-pair">
+                    <a href="#contact" class="header__button main_button" onclick="scrollToSub()">Get started</a>
+                </div>
+                <div class="header__burger burger">
+                    <div class="header__burger-space burger__space" id="burger">
+                        <span class="header__burger-stick burger__stick"></span>
+                        <span class="header__burger-stick burger__stick"></span>
+                        <span class="header__burger-stick burger__stick"></span>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__popup popup" id="popup">
+                <!-- <img src="img/main/mobbgmenu.png" alt="moblogo" class="header__popup-bg mob_menu_bgimage" /> -->
+                <div class="header__popup-textblock popup__textblock" id="popupSlide">
+                    <ul class="header__menu-mobile">
+                        <li>
+                            <a href="#about-us" class="header__menu-item-mobile nav_elem_mobile">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#how-to-start" class="header__menu-item-mobile nav_elem_mobile">How to
+                                start</a>
+                        </li>
+                        <li><a href="#benefits" class="header__menu-item-mobile nav_elem_mobile">Benefits</a></li>
+                        <li>
+                            <a href="#reviews" class="header__menu-item-mobile nav_elem_mobile">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="/sermorelin" class="header__menu-item-mobile nav_elem_mobile">Sermorelin</a>
+                        </li>
+                        <li>
+                            <a href="/trt" class="header__menu-item-mobile nav_elem_mobile">Trt</a>
+                        </li>
+                    </ul>
+                    <div class="header__button-pair header__button-pair--mobile mob_menu_buttons">
+                        <a href="#contact" class="header__button header__button--mobile mob_button mob_menu_button">Get
+                            started </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="main">
+            <div class="gradient5"></div>
+            <div class="container">
+                <div class="main__content-wrapper" data-aos="fade-up">
+                    <div class="main__texts-wrapper">
+                        <div class="main__titles-wrapper">
+                            <h1 class="main__title" data-aos="fade-up">
+                                1 on 1 Physician<br />Designed, Customized<br />Treatments to Optimize Your Health,
+                                Fitness and Longevity
+                            </h1>
+                            <p class="main__title-highlight" data-aos="fade-up" data-aos-delay="100">
+                                Starts Here
+                            </p>
+                        </div>
+                        <p class="main__prducts-text" data-aos="fade-up" data-aos-delay="200">
+                            Testosterone, Tesamorelin, GLPs, NAD+, BPC157, TB500 and much more.
+                        </p>
+                        <a href="#contact" class="main__button" data-aos="fade-up" data-aos-delay="300">Start My Health
+                            Journey</a>
+                    </div>
+                    <div class="main__frame-container" data-aos="zoom-in" data-aos-delay="400">
+                        <video class="main__phone-video" src="images/main/FullSizeRender-1.mp4" autoplay muted loop
+                            playsinline></video>
+                        <img class="main__phone-frame" src="images/main/mobframe.png" alt="Phone Frame" />
+                        <div class="main__sound-icon"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="banner" id="about-us">
+            <div class="container">
+                <div class="banner__wrapper">
+                    <h2 class="section-title" data-aos="fade-right">OUR MISSION</h2>
+                    <p class="banner__text" data-aos="fade-right">
+                        At Aspire Elite Wellness Clinic, we are committed to helping you look, feel, and perform
+                        your best through customized, state-of-the-art medical protocols developed specifically
+                        for you by Dr. Chris Van Smith who will monitor you every step of the way. Whether
+                        you're seeking to enhance your vitality, maximize longevity, manage weight, or optimize
+                        hormonal balance, we offer cutting-edge solutions tailored to your needs.
+                    </p>
+                    <div class="main__limit-wrapper" data-aos="fade-left">
+                        <p class="banner__amount">250</p>
+                        <div class="banner__text-wrapper">
+                            <p class="banner__limit-text">Patient Limit</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="process" id="how-to-start">
+            <div class="container">
+                <div class="process__wrapper">
+                    <h2 class="section-title">OUR PROCESS</h2>
+                    <p class="process__text">
+                        We've crafted a simple, efficient process to ensure you receive the highest level of
+                        care and support.
+                    </p>
+                    <div class="process__items-wrapper">
+                        <div class="process__item" data-aos="fade-up" data-aos-delay="0">
+                            <img src="images/process/1.svg" alt="Physician Consultation" class="item__number" />
+                            <p class="item__title">Physician Consultation</p>
+                            <p class="item__text">
+                                Schedule your first consultation with
+                                <span style="white-space: nowrap">Dr. Van Smith</span> to review your medical
+                                history, discuss your health, fitness and longevity goals, then determine which
+                                diagnostic tests are appropriate.
+                            </p>
+                        </div>
+                        <div class="process__item" data-aos="fade-up" data-aos-delay="100">
+                            <img src="images/process/2.svg" alt="Physician Consultation" class="item__number" />
+                            <p class="item__title">Specified Labs & Testing</p>
+                            <p class="item__text">
+                                A Dexa body composition scan and blood chemistry tests are the baseline for every
+                                patient. Additional testing such as VO2 max.
+                            </p>
+                        </div>
+                        <div class="process__item" data-aos="fade-up" data-aos-delay="200">
+                            <img src="images/process/3.svg" alt="Physician Consultation" class="item__number" />
+                            <p class="item__title">Custom Protocols</p>
+                            <p class="item__text">
+                                Receive a customized treatment protocol that aligns with your specific health goals,
+                                whether it's hormone optimization, weight management, or overall wellness.
+                            </p>
+                        </div>
+                        <div class="process__item" data-aos="fade-up" data-aos-delay="300">
+                            <img src="images/process/4.svg" alt="Physician Consultation" class="item__number" />
+                            <p class="item__title">Ongoing Monitoring</p>
+                            <p class="item__text">
+                                Get ongoing monitoring and protocol adjustments to optimize your results.
+                                <span style="white-space: nowrap">Dr. Van Smith</span> will be with you to guide you
+                                every step away throughout your journey.
+                            </p>
+                        </div>
+                    </div>
+                    <a href="#contact" class="main-button process__button">Book a Consultation</a>
+                </div>
+            </div>
+            <img src="images/process/Vector.svg" alt="Process Background" class="process_bg" />
+        </section>
+
+        <section class="founder">
+            <div class="container">
+                <div class="founder__wrapper">
+                    <div class="founder__img-wrap"
+                        style="max-width: 520px; width: 100%; height: auto; flex-shrink: 0; position: relative">
+                        <img src="images/founder/2chris.webp" alt="Chris Van Smith" class="founder__photo"
+                            data-aos="fade-right" data-aos-delay="200" />
+                        <div class="founder__play-btn"></div>
+                    </div>
+                    <div class="founder__info" data-aos="fade-left" data-aos-delay="400">
+                        <h2 class="section-title">Meet Founder here</h2>
+                        <div class="founder__img-wrap-mob"
+                            style="max-width: 520px; width: 100%; height: auto; flex-shrink: 0">
+                            <img src="images/founder/2chris.webp" alt="Chris Van Smith"
+                                class="founder__photo founder__mob-photo" />
+                            <div class="founder_play-btn"></div>
+                        </div>
+
+                        <p class="founder__text">
+                            Dr. Chris Van Smith is a board-certified physician with over 20 years of experience in
+                            the field of wellness and hormone optimization. His mission is to help individuals
+                            achieve optimal health through personalized care, cutting-edge treatments, and a
+                            holistic approach to well-being. His hands-on approach ensures that every patient
+                            receives the highest level of attention and care, with a focus on achieving the best
+                            possible results for each person.
+                        </p>
+                        <img src="images/founder/drname.png" alt="Signature" class="founder__signature" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="treatments">
+            <div class="container">
+                <div class="treatments_wrapper">
+                    <h2 class="section-title">Our Treatments</h2>
+                    <div class="tretments__items-wrapper">
+                        <div class="tretments__item tretments__item--left" data-aos="fade-up">
+                            <div class="tretments__left-wrapper">
+                                <p class="treatment__item-title">Hormone Replacement Therapy (HRT)</p>
+                                <p class="treatment__item-text">Testosterone, Estrogen, Progesterone</p>
+                            </div>
+                            <div class="treatment__img-circle treatment__img-circle--left">
+                                <img src="images/treatments/1.svg" alt="Hormone" class="treatment_img" />
+                            </div>
+                        </div>
+                        <div class="tretments__item tretments__item--right" data-aos="fade-up">
+                            <div class="tretments__right-wrapper">
+                                <p class="treatment__item-title">Weight Loss Peptides</p>
+                                <p class="treatment__item-text">Retatrutide, Tirzepatide, Semaglutide</p>
+                            </div>
+                            <div class="treatment__img-circle treatment__img-circle--right">
+                                <img src="images/treatments/2.svg" alt="Hormone" class="treatment_img" />
+                            </div>
+                        </div>
+                        <div class="tretments__item  tretments__item--left" data-aos="fade-up">
+                            <div class="tretments__left-wrapper">
+                                <p class="treatment__item-title">Growth Hormone Peptides</p>
+                                <p class="treatment__item-text">Tesamorelin, Sermorelin</p>
+                            </div>
+                            <div class="treatment__img-circle treatment__img-circle--left">
+                                <img src="images/treatments/3.svg" alt="Hormone" class="treatment_img" />
+                            </div>
+                        </div>
+                        <div class="tretments__item tretments__item--right" data-aos="fade-up">
+                            <div class="tretments__right-wrapper">
+                                <p class="treatment__item-title">Healing Peptides</p>
+                                <p class="treatment__item-text">BPC 157, TB500, GHK-CU</p>
+                            </div>
+                            <div class="treatment__img-circle treatment__img-circle--right">
+                                <img src="images/treatments/4.svg" alt="Hormone" class="treatment_img" />
+                            </div>
+                        </div>
+                        <div class="tretments__item  tretments__item--left" data-aos="fade-up">
+                            <div class=" tretments__left-wrapper">
+                                <p class="treatment__item-title">Anti-Aging & Longevity</p>
+                                <p class="treatment__item-text">NAD+</p>
+                            </div>
+                            <div class="treatment__img-circle treatment__img-circle--left">
+                                <img src="images/treatments/5.svg" alt="Hormone" class="treatment_img" />
+                            </div>
+                        </div>
+                        <div class="tretments__item tretments__item--right" data-aos="fade-up">
+                            <div class="tretments__right-wrapper">
+                                <p class="treatment__item-title">ED, Skin & Hair</p>
+                            </div>
+                            <div class="treatment__img-circle treatment__img-circle--right">
+                                <img src="images/treatments/6.svg" alt="Hormone" class="treatment_img" />
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="main-button " style="margin: 0 auto">Explore Our Therapies</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="prices">
+            <div class="gradient5 gradient6"></div>
+            <div class="container">
+                <div class="price__item-wrapper">
+                    <div class="prices__wrapper">
+                        <div class="prices-item" data-aos="fade-up" data-aos-delay="0">
+                            <p class="prices__title">Aspire Elite VIP</p>
+                            <div class="prices-item__wrap">
+                                <p class="prices-item__price">$999</p>
+                                <span class="prices-item__time">mo</span>
+                            </div>
+                            <a href="#contact" class="prices-item__button">Start</a>
+                            <div class="price-item__checks-wrapper">
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>Physician Messaging 5 days/week
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>10% off All Meds
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>2 Telehealth Appointments/yr
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>1 DexaScan/yr
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>2 Sets of Lab Work
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>1 VO2 max test
+                                </p>
+                            </div>
+                        </div>
+                        <div class="prices-item" data-aos="fade-up" data-aos-delay="0">
+                            <p class="prices__title">Aspire Elite Concierge</p>
+                            <div class="prices-item__wrap">
+                                <p class="prices-item__price">$399</p>
+                                <span class="prices-item__time">mo</span>
+                            </div>
+                            <a href="#contact" class="prices-item__button">Start</a>
+                            <div class="price-item__checks-wrapper">
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>Full Concierge Physician Service 7 days/week
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>30% off All Meds
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>4 Telehealth Appointments/yr
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>2 DexaScan/yr
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>3 Sets of Lab Work
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>2 VO2 max tests
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="prices__sub-text">
+                        *Add a significant other to either package for only 50% more.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="whochoose" id="benefits">
+            <div class="whochoose__container container">
+                <h2 class="whochoose__title section-title" data-aos="fade-up">
+                    Why Choose Aspire Elite?
+                </h2>
+                <p class="whochoose__subtitle section-subtitle" data-aos="fade-up">
+                    Our Unique Approach to Wellness
+                </p>
+                <p class="whochoose__description section-text" data-aos="fade-up">
+                    At Aspire Elite Wellness Clinic, we prioritize your well-being with a holistic and
+                    personalized approach to wellness. Here's how we provide exceptional care and set
+                    ourselves apart:
+                </p>
+
+                <div class="whochoose__items" data-aos="fade-up">
+                    <div class="whochoose__item">
+                        <img src="images/whychoose/1.svg" alt="Physician-Only Consultations" class="whochoose__image" />
+                        <p class="whochoose__item-title">Physician-Only Consultations</p>
+                        <p class="whochoose__item-text">
+                            Receive one-on-one consultations exclusively with licensed physicians to ensure your
+                            treatment plan is personalized and tailored to your specific needs.
+                        </p>
+                    </div>
+
+                    <div class="whochoose__item">
+                        <img src="images/whychoose/2.svg" alt="Telemedicine Focus" class="whochoose__image" />
+                        <p class="whochoose__item-title">Telemedicine Focus</p>
+                        <p class="whochoose__item-text">
+                            Convenient no-office visits, so you can receive the care you need from the comfort of
+                            your own home, fitting your treatments into your lifestyle.
+                        </p>
+                    </div>
+
+                    <div class="whochoose__item">
+                        <img src="images/whychoose/3.svg" alt="Custom Testing" class="whochoose__image" />
+                        <p class="whochoose__item-title">Custom Blood Work & Body Composition Testing</p>
+                        <p class="whochoose__item-text">
+                            Our in-depth diagnostics - including blood work and body composition analysis - ensure
+                            that your treatment plan is based on the most accurate, data-driven insights.
+                        </p>
+                    </div>
+
+                    <div class="whochoose__item">
+                        <img src="images/whychoose/4.svg" alt="High Quality Meds" class="whochoose__image" />
+                        <p class="whochoose__item-title">Highest Quality Meds</p>
+                        <p class="whochoose__item-text">
+                            We use only the highest quality medications and supplements to ensure safe, effective
+                            treatments designed to enhance your health and well-being.
+                        </p>
+                    </div>
+
+                    <div class="whochoose__item">
+                        <img src="images/whychoose/5.svg" alt="Concierge Care" class="whochoose__image" />
+                        <p class="whochoose__item-title">Concierge Care</p>
+                        <p class="whochoose__item-text">
+                            Enjoy exceptional, personalized service with dedicated support throughout your
+                            wellness journey. Dr. Chris Van Smith will personally develop your protocols and
+                            monitor your progress throughout your journey.
+                        </p>
+                    </div>
+
+                    <div class="whochoose__item">
+                        <img src="images/whychoose/6.svg" alt="Limited Members" class="whochoose__image" />
+                        <p class="whochoose__item-title">Limited Members</p>
+                        <p class="whochoose__item-text">
+                            In order to ensure that our concierge service maintains the highest standard, we cap
+                            our patient count at 250.
+                        </p>
+                    </div>
+                </div>
+
+                <a href="#contact" class="whochoose__button main-button">Get Personalized Plan</a>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="gradient5 gradient7"></div>
+            <div class="container">
+                <p class="faq__title" data-aos="fade-up">FAQs</p>
+                <img src="images/faq/Group.png" alt="woman" class="faq__img" data-aos="fade-left"
+                    data-aos-delay="300" />
+                <div class="faq__item" id="faq1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq__question-wrapper" id="faq-click">
+                        <h3 class="faq__question">1. What is Sermorelin Therapy?</h3>
+                        <div class="faq__circle-wrapper">
+                            <span class="faq__plus-minus-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq__answer-wrapper">
+                        <div class="separator"></div>
+                        <p class="answer">
+                            Sermorelin is a peptide therapy that stimulates the body’s natural growth hormone
+                            production, helping improve energy, mood, muscle mass, and overall health.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq__item" id="faq1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq__question-wrapper" id="faq-click">
+                        <h3 class="faq__question">2. How does Sermorelin help with low growth hormone levels?</h3>
+                        <div class="faq__circle-wrapper">
+                            <span class="faq__plus-minus-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq__answer-wrapper">
+                        <div class="separator"></div>
+                        <p class="answer">
+                            Sermorelin triggers the natural release of growth hormone from the pituitary gland,
+                            promoting better physical and mental health.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq__item" id="faq1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq__question-wrapper" id="faq-click">
+                        <h3 class="faq__question">3. Who is eligible for Sermorelin therapy?</h3>
+                        <div class="faq__circle-wrapper">
+                            <span class="faq__plus-minus-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq__answer-wrapper">
+                        <div class="separator"></div>
+                        <p class="answer">
+                            Sermorelin is suitable for individuals experiencing symptoms related to low growth
+                            hormone, including fatigue, mood swings, weight gain, and decreased muscle mass. A
+                            consultation with a healthcare provider will determine if it's right for you
+                        </p>
+                    </div>
+                </div>
+                <div class="faq__item" id="faq1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq__question-wrapper" id="faq-click">
+                        <h3 class="faq__question">4. How soon will I see results from Sermorelin therapy?</h3>
+                        <div class="faq__circle-wrapper">
+                            <span class="faq__plus-minus-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq__answer-wrapper">
+                        <div class="separator"></div>
+                        <p class="answer">
+                            While results vary, many people start to feel more energized and focused within a few
+                            weeks. Full benefits, including improved muscle tone and fat loss, can take a few
+                            months.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq__item" id="faq1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq__question-wrapper" id="faq-click">
+                        <h3 class="faq__question">5. kHow do I schedule an appointment with Aspire Elite?</h3>
+                        <div class="faq__circle-wrapper">
+                            <span class="faq__plus-minus-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq__answer-wrapper">
+                        <div class="separator"></div>
+                        <p class="answer">
+                            You can schedule an appointment by filling out the form on our website or calling our
+                            clinic directly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="section-title reviews__title" data-aos="fade-up">
+                    What Our Patients Are Saying
+                </h2>
+                <div class="reviews__items-wrapper">
+                    <div class="swiper reviews-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    <img src="images/reviews/1.png" alt="Review" class="reviews__item-img" />
+                                    <p class="reviews__item-name">Michael T.</p>
+                                    <p class="reviews__item-title">"A Life-Changing Experience!"</p>
+                                    <p class="reviews__item-text">
+                                        "I came to Aspire Meds for hormone replacement therapy, and the results have
+                                        been amazing. Not only do I feel more energized and focused, but my overall mood
+                                        and well-being have greatly improved. Dr. Chris Van Smith and his team truly
+                                        listen to your concerns and create personalized treatment plans. I'm so glad I
+                                        chose Aspire Meds!"
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    <img src="images/reviews/2.png" alt="Review" class="reviews__item-img" />
+                                    <p class="reviews__item-name">Allan L.</p>
+                                    <p class="reviews__item-title">"Professional, Knowledgeable,<br />and Compassionate"
+                                    </p>
+                                    <p class="reviews__item-text">
+                                        "From my first consultation to my ongoing treatment, the team at Aspire Meds has
+                                        been nothing short of outstanding. The care I received was personalized and
+                                        effective. Dr. Smith is incredibly knowledgeable and always took the time to
+                                        answer my questions. I highly recommend Aspire Meds!"
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    <img src="images/reviews/3.png" alt="Review" class="reviews__item-img" />
+                                    <p class="reviews__item-name">David R.</p>
+                                    <p class="reviews__item-title">"I Feel Like Myself Again"</p>
+                                    <p class="reviews__item-text">
+                                        "I struggled with weight management for years and tried countless programs
+                                        without success. After starting the weight loss peptides at Aspire Meds, I've
+                                        lost weight and gained back my confidence. The team is supportive, and the
+                                        treatment plan was perfectly tailored to me."
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact__wrapper">
+                    <p class="contact__title" data-aos="fade-up">Contact Us</p>
+                    <script type="text/javascript" src="https://form.jotform.com/jsform/251592457169164"></script>
+                </div>
+            </div>
+        </section>
+
+
+        <div id="founder-video-modal" class="founder-video-modal">
+            <div class="founder-video-modal-backdrop"></div>
+            <div class="founder-video-modal-content">
+                <span class="founder-video-modal-close">&times;</span>
+                <video id="founder-video" controls>
+                    <source src="images/main/FullSizeRender.MP4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__wrapper">
+            <div class="footer__info">
+                <a href="/"><img src="./images/global/logo.png" alt="logo" class="footer__logo" /></a>
+                <a href="tel:728-223-3791" class="footer__phone footer__phone--desk">
+                    <img src="./images/footer/phone.svg" alt="phone" class="footer__phone-icon" />
+                    <span class="footer__phone-number">728-223-3791</span>
+                </a>
+                <p class="footer__phone footer__phone--desk">
+                    <img src="./images/footer/loc.svg" alt="location" class="footer__phone-icon" />
+                    <span class="footer__phone-number">304 Indian Trace Weston, Fl 33326, PO Box 907</span>
+                </p>
+                <div class="footer__icons">
+                    <a href="https://www.facebook.com/profile.php?id=61566299494639" target="_blank"
+                        class="footer__icon-link">
+                        <img src="./images/footer/fb.svg" alt="icon" class="footer__icon-img" />
+                    </a>
+                    <a href="mailto:info@aspiremedsonline.com" class="footer__icon-link">
+                        <img src="./images/footer/mail.svg" alt="icon" class="footer__icon-img" />
+                    </a>
+                    <a href="https://www.instagram.com/aspiremeds?igsh=cmh6dTg0Mm0wYmg3" target="_blank"
+                        class="footer__icon-link">
+                        <img src="./images/footer/inst.svg" alt="icon" class="footer__icon-img" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav-title">Navigation</p>
+                <a href="#how-to-start" class="footer__nav-link">How to start</a>
+                <a href="#benefits" class="footer__nav-link">Benefits</a>
+                <a href="#about-us" class="footer__nav-link">About</a>
+                <a href="#reviews" class="footer__nav-link">Reviews</a>
+                <a href="/privacy-policy/" class="footer__nav-link">Privacy Policy</a>
+            </div>
+            <div class="footer__hours">
+                <p class="footer__nav-title">Work hours</p>
+                <p class="footer__hours-day">Monday - Friday</p>
+                <p class="footer__hours-time">9:00 am - 5:00 pm</p>
+                <p class="footer__hours-day">Saturday - Sunday</p>
+                <p class="footer__hours-time">By Appointment Only</p>
+                <a href="tel:728-223-3791" class="footer__phone footer__phone--mob">
+                    <img src="./images/footer/phone.svg" alt="phone" class="footer__phone-icon" />
+                    <span class="footer__phone-number">728-223-3791</span>
+                </a>
+            </div>
+            <div class="footer__pharm">
+                <a href="https://www.legitscript.com/websites/?checker_keywords=aspiremedsonline.com" target="_blank"
+                    class="footer__pharm-link"><img src="./images/global/leg.png" class="footer__pharm-img"
+                        alt="legitscript" /></a>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/aos.js"></script>
+    <script src="js/swiper.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>

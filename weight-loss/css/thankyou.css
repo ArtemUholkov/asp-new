@@ -1,0 +1,74 @@
+.thankyou {
+    width: 100svw;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.thankyou_wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {}
+
+.thankyou_title {
+    max-width: 800px;
+    text-align: center;
+    font-size: 62px;
+    color: white;
+}
+
+.logo_thank-you {
+    max-width: 250px;
+    margin-bottom: 40px;
+}
+
+.thankyou_button {
+    text-decoration: none;
+}
+
+.thankyou_button:hover {
+    text-decoration: none;
+}
+
+.thankyou_text {
+    font-size: 26px;
+    max-width: 800px;
+    text-align: center;
+    margin-bottom: 40px;
+    color: white;
+}
+
+.th_buttons_wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+@media (max-width: 620px) {
+    .logo_thank-you {
+        max-width: 150px;
+    }
+
+    .thankyou_title {
+        max-width: 600px;
+        text-align: center;
+        font-size: 30px;
+    }
+
+    .thankyou_text {
+        font-size: 18px;
+    }
+
+    .th_buttons_wrapper {
+        flex-direction: column-reverse;
+    }
+}

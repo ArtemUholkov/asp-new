@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Landing Page</title>
+    <link rel="icon" type="image/x-icon" href="images/global/favicon-32x32.png" />
+
+    <link rel="stylesheet" href="../css/aos.css" />
+    <link rel="stylesheet" href="../css/swiper.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <!-- Meta Pixel Code -->
+    <script>
+        !(function (f, b, e, v, n, t, s) {
+            if (f.fbq) return;
+            n = f.fbq = function () {
+                n.callMethod ? n.callMethod.apply(n, arguments) : n.queue.push(arguments);
+            };
+            if (!f._fbq) f._fbq = n;
+            n.push = n;
+            n.loaded = !0;
+            n.version = '2.0';
+            n.queue = [];
+            t = b.createElement(e);
+            t.async = !0;
+            t.src = v;
+            s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s);
+        })(window, document, 'script', 'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '23995060440173674');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display: none"
+            src="https://www.facebook.com/tr?id=23995060440173674&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
+    <!-- Google Tag Manager -->
+    <script>
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({ 'gtm.start': new Date().getTime(), event: 'gtm.js' });
+            var f = d.getElementsByTagName(s)[0],
+                j = d.createElement(s),
+                dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-5WZRQB63');
+    </script>
+    <!-- End Google Tag Manager -->
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-B4KCLD8WTS"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
+
+        gtag('config', 'G-B4KCLD8WTS');
+    </script>
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__wrapper mycontainer">
+            <nav class="header__navbar navbar">
+                <a href="/" class="header__logo-wrapper">
+                    <img src="../images/global/logo2.png" alt="logo" class="header__logo header__logo--white" />
+                    <img src="../images/global/logo2.png" alt="logo"
+                        class="header__logo header__logo--hide header__logo--color" />
+                </a>
+
+                <ul class="header__menu ">
+                    <li><a class="header__menu-item -item" href="#about-us">About Us</a></li>
+                    <li>
+                        <button class="header__menu-item header__menu-item--drop-down">
+                            Treatmens
+                            <img class="header__drop-icon" src="/images/icons/ic_drop-down.svg" alt="drop-down">
+                            <div class="header__drop-down-wrapper">
+                                <ul class="header__drop-down">
+                                    <li>
+                                        <a class="header__drop-donw-link" href="/sermorelin ">Sermorelin</a>
+                                    </li>
+                                    <li>
+                                        <a class="header__drop-donw-link" href="/trt">Trt</a>
+                                    </li>
+                                    <li>
+                                        <a class="header__drop-donw-link" href="/weight-loss">Weight Loss</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </button>
+                    </li>
+                    <li><a class="header__menu-item -item" href="#how-to-start">How to start</a></li>
+                    <li><a class="header__menu-item -item" href="#benefits">Benefits</a></li>
+
+                    <li><a class="header__menu-item -item" href="#reviews">Reviews</a></li>
+                </ul>
+                <div class="header__button-pair">
+                    <a href="#contact" class="header__button main-button" onclick="scrollToSub()">Get started</a>
+                </div>
+                <div class="header__burger burger">
+                    <div class="header__burger-space burger__space" id="burger">
+                        <span class="header__burger-stick burger__stick"></span>
+                        <span class="header__burger-stick burger__stick"></span>
+                        <span class="header__burger-stick burger__stick"></span>
+                    </div>
+                </div>
+            </nav>
+            <div class="header__popup popup" id="popup">
+                <!-- <img src="img/main/mobbgmenu.png" alt="moblogo" class="header__popup-bg mob_menu_bgimage" /> -->
+                <div class="header__popup-textblock popup__textblock" id="popupSlide">
+                    <ul class="header__menu-mobile -mobile">
+                        <li>
+                            <a href="#about-us" class="header__menu-item-mobile nav_elem_mobile">About Us</a>
+                        </li>
+                        <li>
+                            <a href="#how-to-start" class="header__menu-item-mobile nav_elem_mobile">How to start</a>
+                        </li>
+                        <li><a href="#benefits" class="header__menu-item-mobile nav_elem_mobile">Benefits</a></li>
+                        <li>
+                            <a href="#reviews" class="header__menu-item-mobile nav_elem_mobile">Reviews</a>
+                        </li>
+                        <li>
+                            <a href="/sermorelin" class="header__menu-item-mobile nav_elem_mobile">Sermorelin</a>
+                        </li>
+                        <li>
+                            <a href="/trt" class="header__menu-item-mobile nav_elem_mobile">Trt</a>
+                        </li>
+                    </ul>
+                    <div class="header__button-pair header__button-pair--mobile mob_menu_buttons">
+                        <a href="#contact" class="header__button header__button--mobile mob_button mob_menu_button">Get
+                            started </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero__background">
+                <video autoplay muted loop playsinline class="hero__video">
+                    <source src="../images/main/sermorelin/video2.mp4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+                <div class="hero__overlay"></div>
+            </div>
+            <div class="container hero__content">
+                <h1 class="hero__title" data-aos="fade-up" data-aos-delay="200">SERMORELIN THERAPY</h1>
+                <p class="hero__subtitle" data-aos="fade-up" data-aos-delay="400">
+                    Unlock your body’s natural potential and take control of your health with transformative
+                    hormone optimization.
+                </p>
+                <div data-aos="fade-up" data-aos-delay="600">
+                    <a href="#contact" class="main-button hero__btn">Get Started</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="sermorelin-therapy">
+            <div class="sermorelin-therapy__container">
+                <div class="sermorelin-therapy__container-wrap">
+                    <div data-aos="fade-up" data-aos-delay="100">
+                        <img class="sermorelin-therapy__img" src="../images/theraphy/bottle.png"
+                            alt="What Is Sermorelin" />
+                    </div>
+                    <div class="sermorelin-therapy__text-wrap" data-aos="fade-up" data-aos-delay="200">
+                        <h2 class="sermorelin-therapy__title">What Is Sermorelin Therapy?</h2>
+                        <p class="sermorelin-therapy__text">
+                            Sermorelin is a synthetic peptide from the Growth Hormone-Releasing Hormones (GHRH)
+                            group. It stimulates your body’s natural growth hormone production, promoting tissue
+                            repair, enhancing metabolism, and boosting overall health. As a non-invasive
+                            treatment, Sermorelin effectively addresses hormone imbalances, especially those
+                            caused by aging.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="sermorelin-banner" id="about-us">
+            <div class="container banner__container">
+                <div class="sermorelin-banner__wrapper">
+                    <h2 class="sermorelin-banner__title section-title" data-aos="fade-up">
+                        Is Sermorelin Right for You?
+                    </h2>
+                    <p class="sermorelin-banner__text" data-aos="fade-up" data-aos-delay="200">
+                        If you’re experiencing any of the following, Sermorelin therapy could be the solution
+                        you've been looking for:
+                    </p>
+                    <div class="sermorelin-banner__items-wrapper">
+                        <div class="sermorelin-banner__item-grid sermorelin-banner__item-grid--1">
+                            <div class="sermorelin-banner__item" data-aos="fade-up" data-aos-delay="100">
+                                <img src="../images/banner/sermorelin/1.webp" alt="sermorelin-banner Item"
+                                    class="sermorelin-banner__item-img" />
+                                <div class="sermorelin-banner__item-text-wrapper">
+                                    <p class="sermorelin-banner__item-title">
+                                        Low energy or fatigue, even after a full night's sleep
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="sermorelin-banner__item" data-aos="fade-up" data-aos-delay="200">
+                                <img src="../images/banner/sermorelin/4.webp" alt="sermorelin-banner Item"
+                                    class="sermorelin-banner__item-img" />
+                                <div class="sermorelin-banner__item-text-wrapper">
+                                    <p class="sermorelin-banner__item-title">Decreased libido or performance</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sermorelin-banner__item-grid sermorelin-banner__item-grid--2">
+                            <div class="sermorelin-banner__item" data-aos="fade-up" data-aos-delay="300">
+                                <img src="../images/banner/sermorelin/6.webp" alt="sermorelin-banner Item"
+                                    class="sermorelin-banner__item-img" />
+                                <div class="sermorelin-banner__item-text-wrapper">
+                                    <p class="sermorelin-banner__item-title">Reduced quality of sleep</p>
+                                </div>
+                            </div>
+                            <div class="sermorelin-banner__item" data-aos="fade-up" data-aos-delay="400">
+                                <img src="../images/banner/sermorelin/5.webp" alt="sermorelin-banner Item"
+                                    class="sermorelin-banner__item-img" />
+                                <div class="sermorelin-banner__item-text-wrapper">
+                                    <p class="sermorelin-banner__item-title">Difficulty losing weight or gaining muscle
+                                        mass
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="sermorelin-banner__item sermorelin-banner__item--single" data-aos="fade-up"
+                            data-aos-delay="500">
+                            <img src="../images/banner/sermorelin/3.webp" alt="sermorelin-banner Item"
+                                class="sermorelin-banner__item-img" />
+                            <div class="sermorelin-banner__item-text-wrapper">
+                                <p class="sermorelin-banner__item-title">Trouble with mood swings, depression, or
+                                    anxiety
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#contact" class="main-button  banner__button">Start My Treatment</a>
+                </div>
+            </div>
+        </section>
+
+        <section class="transform" id="benefits">
+            <div class="container">
+                <h2 class="section-title transform__title" data-aos="fade-up">
+                    Benefits of Sermorelin Therapy
+                </h2>
+                <p class="transform__sub-text" data-aos="fade-up" data-aos-delay="200">
+                    Sermorelin therapy helps restore your body’s natural balance, offering benefits that
+                    enhance your overall health and vitality:
+                </p>
+                <div class="transform__items-wrapper">
+                    <div class="transform__item" data-aos="fade-up" data-aos-delay="100">
+                        <img src="../images/transform/3.svg" alt="Transform Item" class="transform__item-img" />
+                        <p class="transform__item-title">Increased Energy</p>
+                        <p class="transform__item-text">Feel more vibrant and energized throughout the day.
+                        </p>
+                    </div>
+                    <div class="transform__item" data-aos="fade-up" data-aos-delay="200">
+                        <img src="../images/transform/5.svg" alt="Transform Item" class="transform__item-img" />
+                        <p class="transform__item-title">Improved Muscle Mass</p>
+                        <p class="transform__item-text">Regain muscle tone and strength.</p>
+                    </div>
+                    <div class="transform__item" data-aos="fade-up" data-aos-delay="300">
+                        <img src="../images/transform/6.svg" alt="Transform Item" class="transform__item-img" />
+                        <p class="transform__item-title">Better Sleep</p>
+                        <p class="transform__item-text">Enjoy deeper, more restorative sleep.</p>
+                    </div>
+                    <div class="transform__item" data-aos="fade-up" data-aos-delay="400">
+                        <img src="../images/transform/2.svg" alt="Transform Item" class="transform__item-img" />
+                        <p class="transform__item-title">Enhanced Metabolism</p>
+                        <p class="transform__item-text">Support weight loss and fat reduction.</p>
+                    </div>
+                    <div class="transform__item" data-aos="fade-up" data-aos-delay="500">
+                        <img src="../images/transform/7.svg" alt="Transform Item" class="transform__item-img" />
+                        <p class="transform__item-title">Stronger Immune System</p>
+                        <p class="transform__item-text">Help boost overall health and immune function.</p>
+                    </div>
+                    <div class="transform__item" data-aos="fade-up" data-aos-delay="600">
+                        <img src="../images/transform/4.svg" alt="Transform Item" class="transform__item-img" />
+                        <p class="transform__item-title">Mood & Mental Clarity</p>
+                        <p class="transform__item-text">Achieve improved mood and sharper focus.</p>
+                    </div>
+                </div>
+                <div data-aos="fade-up" data-aos-delay="600">
+                    <a href="#contact" class="main-button transform__button">
+                        Get Personalized Plan
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bottles">
+            <div class="gradient5 gradient6"></div>
+            <div class="container">
+                <div class="bottles__wrapper">
+                    <img src="../images/bottles/bottles2.png" alt="Bottles" class="bottles_img" data-aos="fade-right"
+                        data-aos-delay="200" />
+                    <div class="bottles__prices-wrapper">
+                        <div class="prices-item" data-aos="fade-right" data-aos-delay="0">
+                            <p class="prices__title">SERMORELIN THERAPY</p>
+                            <div class="prices-item__wrap">
+                                <p class="prices-item__price">$299</p>
+                                <span class="prices-item__time">mo</span>
+                            </div>
+                            <p class="bottles__subtitle">included a telehealth consult and 1 labwork</p>
+                            <a href="#contact" class="prices-item__button">Start</a>
+                            <div class="price-item__checks-wrapper">
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Boosts Energy & Vitality
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Enhances Muscle Mass & Strength
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Improves Mental Clarity & Focus
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Elevates Mood & Emotional Well-being
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Promotes Skin Health & Elasticity
+                                </p>
+                                <p class="price-item__check">
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"
+                                        fill="none">
+                                        <path d="M20.3535 5.91455L9.35352 16.9146L4.35352 11.9146" stroke="#071867"
+                                            stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                                    </svg>
+                                    Supports Bone Density & Joint Health
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="../images/process/Vector.svg" alt="Process Background" class="process_bg" />
+        </section>
+
+        <section class="steps" id="how-to-start">
+            <div class="container">
+                <div class="steps__wrapper">
+                    <h2 class="section-title " data-aos="fade-up">Step-by-step<br />process</h2>
+                    <div class="steps__items-wrapper">
+                        <div class="steps__item" data-aos="fade-left" data-aos-delay="100">
+                            <img src="../images/steps/11.png" alt="Step" class="steps__number" />
+                            <div class="steps__text-wrapper">
+                                <p class="step__title">Fill out a quick online<br />form</p>
+                                <img src="../images/steps/1.svg" alt="Step" class="steps__img" />
+                            </div>
+                        </div>
+                        <div class="steps__item" data-aos="fade-left" data-aos-delay="200">
+                            <img src="../images/steps/22.png" alt="Step" class="steps__number" />
+                            <div class="steps__text-wrapper">
+                                <p class="step__title">Book your $49 Money Back<br />Guarantee Consult!</p>
+                                <img src="../images/steps/2.svg" alt="Step" class="steps__img" />
+                            </div>
+                        </div>
+                        <div class="steps__item" data-aos="fade-left" data-aos-delay="300">
+                            <img src="../images/steps/33.png" alt="Step" class="steps__number" />
+                            <div class="steps__text-wrapper">
+                                <p class="step__title">
+                                    Consult with a provider and<br />complete lab work if needed
+                                </p>
+                                <img src="../images/steps/3.svg" alt="Step" class="steps__img" />
+                            </div>
+                        </div>
+                        <div class="steps__item" data-aos="fade-left" data-aos-delay="400">
+                            <img src="../images/steps/44.png" alt="Step" class="steps__number" />
+                            <div class="steps__text-wrapper">
+                                <p class="step__title">Receive your medication<br />within 72 hours</p>
+                                <img src="../images/steps/4.svg" alt="Step" class="steps__img" />
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="steps__mob-wrapper">
+                    <div class="swiper steps-mobile-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="steps__mob-item">
+                                    <img src="../images/steps/11.png" alt="Step" class="steps__mob-number" />
+                                    <div class="steps__mob-text-wrapper">
+                                        <p class="steps__mob-title">Fill out a quick online form</p>
+                                        <img src="../images/steps/1.svg" alt="Step" class="steps__mob-img" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="steps__mob-item">
+                                    <img src="../images/steps/22.png" alt="Step" class="steps__mob-number" />
+                                    <div class="steps__mob-text-wrapper">
+                                        <p class="steps__mob-title">Book your free consultation</p>
+                                        <img src="../images/steps/2.svg" alt="Step" class="steps__mob-img" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="steps__mob-item">
+                                    <img src="../images/steps/33.png" alt="Step" class="steps__mob-number" />
+                                    <div class="steps__mob-text-wrapper">
+                                        <p class="steps__mob-title">
+                                            Consult with a provider and complete lab work if needed
+                                        </p>
+                                        <img src="../images/steps/3.svg" alt="Step" class="steps__mob-img" />
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="steps__mob-item">
+                                    <img src="../images/steps/44.png" alt="Step" class="steps__mob-number" />
+                                    <div class="steps__mob-text-wrapper">
+                                        <p class="steps__mob-title">Receive your medication within 72 hours</p>
+                                        <img src="../images/steps/4.svg" alt="Step" class="steps__mob-img" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="swiper-pagination steps-mobile-pagination"></div>
+            </div>
+        </section>
+
+        <section class="founder">
+            <div class="container">
+                <div class="founder__wrapper">
+                    <div class="founder__img-wrap"
+                        style="max-width: 520px; width: 100%; height: auto; flex-shrink: 0; position: relative">
+                        <img src="../images/founder/2chris.webp" alt="Chris Van Smith" class="founder__photo"
+                            data-aos="fade-right" data-aos-delay="200" />
+                        <div class="founder__play-btn"></div>
+                    </div>
+                    <div class="founder__info" data-aos="fade-left" data-aos-delay="400">
+                        <h2 class="section-title">Meet Founder here</h2>
+                        <div class="founder__img-wrap-mob"
+                            style="max-width: 520px; width: 100%; height: auto; flex-shrink: 0">
+                            <img src="../images/founder/2chris.webp" alt="Chris Van Smith"
+                                class="founder__photo founder__mob-photo" />
+                            <div class="founder_play-btn"></div>
+                        </div>
+
+                        <p class="founder__text">
+                            Dr. Chris Van Smith is a board-certified physician with over 20 years of experience in
+                            the field of wellness and hormone optimization. His mission is to help individuals
+                            achieve optimal health through personalized care, cutting-edge treatments, and a
+                            holistic approach to well-being. His hands-on approach ensures that every patient
+                            receives the highest level of attention and care, with a focus on achieving the best
+                            possible results for each person.
+                        </p>
+                        <img src="../images/founder/drname.png" alt="Signature" class="founder__signature" />
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="reviews" id="reviews">
+            <div class="container">
+                <h2 class="section-title reviews__title" data-aos="fade-up" data-aos-delay="200">
+                    What Our Patients Are Saying
+                </h2>
+                <div class="reviews__items-wrapper">
+                    <div class="swiper reviews-swiper">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    <img src="../images/reviews/sermorelin/1.png" alt="Review"
+                                        class="reviews__item-img" />
+                                    <p class="reviews__item-name">James R.</p>
+                                    <p class="reviews__item-title">50 y.o.</p>
+                                    <p class="reviews__item-text">
+                                        “Sermorelin with Aspire Elite has transformed my energy levels. I feel like I’ve
+                                        turned back the clock, with better mood, focus, and vitality. Highly recommend
+                                        it!”
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    <img src="../images/reviews/sermorelin/2.png" alt="Review"
+                                        class="reviews__item-img" />
+                                    <p class="reviews__item-name">David M.</p>
+                                    <p class="reviews__item-title">40 y.o.</p>
+                                    <p class="reviews__item-text">
+                                        “I was skeptical at first, but after a few weeks of Sermorelin therapy with
+                                        Aspire Elite, I feel sharper, more energetic, and healthier overall.”
+                                    </p>
+                                </div>
+                            </div>
+                            <div class="swiper-slide">
+                                <div class="reviews__item">
+                                    <img src="../images/reviews/sermorelin/3.png" alt="Review"
+                                        class="reviews__item-img" />
+                                    <p class="reviews__item-name">John L.</p>
+                                    <p class="reviews__item-title">45 y.o.</p>
+                                    <p class="reviews__item-text">
+                                        “I was skeptical at first, but after a few weeks of Sermorelin therapy with
+                                        Aspire Elite, I feel sharper, more energetic, and healthier overall.”
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-pagination"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq" id="faq">
+            <div class="gradient5 gradient7"></div>
+            <div class="container">
+                <p class="faq__title" data-aos="fade-up">FAQs</p>
+                <img src="../images/faq/Group.png" alt="woman" class="faq__img" data-aos="fade-left"
+                    data-aos-delay="300" />
+                <div class="faq__item" id="faq1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq__question-wrapper" id="faq-click">
+                        <h3 class="faq__question">1. What is Sermorelin Therapy?</h3>
+                        <div class="faq__circle-wrapper">
+                            <span class="faq__plus-minus-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq__answer-wrapper">
+                        <div class="separator"></div>
+                        <p class="answer">
+                            Sermorelin is a peptide therapy that stimulates the body’s natural growth hormone
+                            production, helping improve energy, mood, muscle mass, and overall health.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="faq__item" id="faq1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq__question-wrapper" id="faq-click">
+                        <h3 class="faq__question">2. How does Sermorelin help with low growth hormone levels?</h3>
+                        <div class="faq__circle-wrapper">
+                            <span class="faq__plus-minus-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq__answer-wrapper">
+                        <div class="separator"></div>
+                        <p class="answer">
+                            Sermorelin triggers the natural release of growth hormone from the pituitary gland,
+                            promoting better physical and mental health.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq__item" id="faq1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq__question-wrapper" id="faq-click">
+                        <h3 class="faq__question">3. Who is eligible for Sermorelin therapy?</h3>
+                        <div class="faq__circle-wrapper">
+                            <span class="faq__plus-minus-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq__answer-wrapper">
+                        <div class="separator"></div>
+                        <p class="answer">
+                            Sermorelin is suitable for individuals experiencing symptoms related to low growth
+                            hormone, including fatigue, mood swings, weight gain, and decreased muscle mass. A
+                            consultation with a healthcare provider will determine if it's right for you
+                        </p>
+                    </div>
+                </div>
+                <div class="faq__item" id="faq1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq__question-wrapper" id="faq-click">
+                        <h3 class="faq__question">4. How soon will I see results from Sermorelin therapy?</h3>
+                        <div class="faq__circle-wrapper">
+                            <span class="faq__plus-minus-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq__answer-wrapper">
+                        <div class="separator"></div>
+                        <p class="answer">
+                            While results vary, many people start to feel more energized and focused within a few
+                            weeks. Full benefits, including improved muscle tone and fat loss, can take a few
+                            months.
+                        </p>
+                    </div>
+                </div>
+                <div class="faq__item" id="faq1" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq__question-wrapper" id="faq-click">
+                        <h3 class="faq__question">5. kHow do I schedule an appointment with Aspire Elite?</h3>
+                        <div class="faq__circle-wrapper">
+                            <span class="faq__plus-minus-icon">+</span>
+                        </div>
+                    </div>
+                    <div class="faq__answer-wrapper">
+                        <div class="separator"></div>
+                        <p class="answer">
+                            You can schedule an appointment by filling out the form on our website or calling our
+                            clinic directly.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="contact" id="contact">
+            <div class="container">
+                <div class="contact__wrapper">
+                    <p class="contact__title" data-aos="fade-up">Contact Us</p>
+                    <script type="text/javascript" src="https://form.jotform.com/jsform/251979159118166"></script>
+                </div>
+            </div>
+        </section>
+
+        <div id="founder-video-modal" class="founder-video-modal">
+            <div class="founder-video-modal-backdrop"></div>
+            <div class="founder-video-modal-content">
+                <span class="founder-video-modal-close">&times;</span>
+                <video id="founder-video" controls>
+                    <source src="../images/main/FullSizeRender.MP4" type="video/mp4" />
+                    Your browser does not support the video tag.
+                </video>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <div class="footer__wrapper">
+            <div class="footer__info">
+                <a href="/"><img src="../images/global/logo.png" alt="logo" class="footer__logo" /></a>
+                <a href="tel:728-223-3791" class="footer__phone footer__phone--desk">
+                    <img src="../images/footer/phone.svg" alt="phone" class="footer__phone-icon" />
+                    <span class="footer__phone-number">728-223-3791</span>
+                </a>
+                <p class="footer__phone footer__phone--desk">
+                    <img src="../images/footer/loc.svg" alt="location" class="footer__phone-icon" />
+                    <span class="footer__phone-number">304 Indian Trace Weston, Fl 33326, PO Box 907</span>
+                </p>
+                <div class="footer__icons">
+                    <a href="https://www.facebook.com/profile.php?id=61566299494639" target="_blank"
+                        class="footer__icon-link">
+                        <img src="../images/footer/fb.svg" alt="icon" class="footer__icon-img" />
+                    </a>
+                    <a href="mailto:info@aspiremedsonline.com" class="footer__icon-link">
+                        <img src="../images/footer/mail.svg" alt="icon" class="footer__icon-img" />
+                    </a>
+                    <a href="https://www.instagram.com/aspiremeds?igsh=cmh6dTg0Mm0wYmg3" target="_blank"
+                        class="footer__icon-link">
+                        <img src="../images/footer/inst.svg" alt="icon" class="footer__icon-img" />
+                    </a>
+                </div>
+            </div>
+            <div class="footer__nav">
+                <p class="footer__nav-title">Navigation</p>
+                <a href="/#how-to-start/" class="footer__nav-link">How to start</a>
+                <a href="/#benefits/" class="footer__nav-link">Benefits</a>
+                <a href="/#about-us/" class="footer__nav-link">About</a>
+                <a href="/#reviews/" class="footer__nav-link">Reviews</a>
+                <a href="/privacy-policy/" class="footer__nav-link">Privacy Policy</a>
+            </div>
+            <div class="footer__hours">
+                <p class="footer__nav-title">Work hours</p>
+                <p class="footer__hours-day">Monday - Friday</p>
+                <p class="footer__hours-time">9:00 am - 5:00 pm</p>
+                <p class="footer__hours-day">Saturday - Sunday</p>
+                <p class="footer__hours-time">By Appointment Only</p>
+                <a href="tel:728-223-3791" class="footer__phone footer__phone--mob">
+                    <img src="../images/footer/phone.svg" alt="phone" class="footer__phone-icon" />
+                    <span class="footer__phone-number">728-223-3791</span>
+                </a>
+            </div>
+            <div class="footer__pharm">
+                <a href="https://www.legitscript.com/websites/?checker_keywords=aspiremedsonline.com" target="_blank"
+                    class="footer__pharm-link"><img src="../images/global/leg.png" class="footer__pharm-img"
+                        alt="legitscript" />
+                </a>
+            </div>
+        </div>
+    </footer>
+    <script src="../js/aos.js"></script>
+    <script src="../js/swiper.js"></script>
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

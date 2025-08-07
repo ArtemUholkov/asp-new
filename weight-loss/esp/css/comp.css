@@ -1,0 +1,126 @@
+.comp {
+  padding-top: 200px;
+  padding-left: 200px;
+  padding-right: 200px;
+}
+.comp_wrapper {
+  position: relative;
+  border-radius: 30px; /* Adjust as needed */
+  overflow: hidden; /* Ensures the content respects the border radius */
+  padding: 60px 75px;
+  background-color: #fefefe;
+  z-index: -1;
+}
+
+.comp_wrapper::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1; /* Ensure the gradient is behind the content */
+  border-radius: inherit; /* Matches the border-radius of the main element */
+  padding: 1px; /* Adjust this value for the thickness of the gradient border */
+  background: linear-gradient(to right, #ff00b8, #00e0ff); /* Gradient from left to right */
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0); /* Masks the content area */
+  mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+}
+
+.comp_wrapper > * {
+  position: relative;
+  z-index: 1; /* Ensure content appears above the gradient border */
+}
+.img_text_wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 58px;
+}
+.comp_img {
+  max-width: 100%;
+  height: auto;
+  display: block; /* Optional: Ensures that the image doesn't have any extra spacing as inline elements do */
+}
+.comp_desk-img {
+}
+.comp_mob-img {
+  display: none;
+}
+.comp_texts {
+}
+.comp_title {
+  color: var(--Charcoal-gray, #111);
+  font-family: 'Montserrat', sans-serif;
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 120%;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  width: 587px;
+}
+.comp_text {
+  color: var(--Charcoal-gray, #111);
+  font-family: 'Roboto', sans-serif;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 160%;
+}
+
+@media (max-width: 1812px) {
+  .comp {
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+}
+@media (max-width: 1600px) {
+  .comp {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+@media (max-width: 1500px) {
+  .comp {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .img_text_wrapper {
+    gap: 20px;
+  }
+}
+@media (max-width: 1400px) {
+  .img_text_wrapper {
+    flex-direction: column-reverse;
+  }
+}
+@media (max-width: 800px) {
+  .comp_wrapper {
+    padding: 0;
+    border: 0;
+    border-radius: 0;
+    background: transparent;
+  }
+  .comp_wrapper::before {
+    display: none;
+  }
+  .comp_title {
+    width: auto;
+    font-size: 26px;
+  }
+  .comp_text {
+    font-size: 16px;
+  }
+  .comp_desk-img {
+    display: none;
+  }
+  .comp_mob-img {
+    display: block;
+    width: 100%;
+  }
+  .comp {
+    padding-top: 100px;
+  }
+}
