@@ -3854,6 +3854,7 @@ footer {
     background-color: var(--second-color);
     border-radius: 20px;
     padding: 40px;
+    border: 1px solid var(--main-color);
 }
 
 .policy__title-sec {
