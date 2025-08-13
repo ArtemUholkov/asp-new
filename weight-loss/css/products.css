@@ -67,7 +67,7 @@
   mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
   -webkit-mask-composite: xor;
   mask-composite: exclude;
-  z-index: -1; /* Place the gradient behind the content */
+  z-index: 2; /* Place the gradient behind the content */
 }
 .product_title {
   color: var(--Charcoal-gray, #111);
