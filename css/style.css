@@ -2052,7 +2052,13 @@ body {
     font-weight: 700;
     line-height: 120%;
     text-transform: uppercase;
-    margin-bottom: 22px;
+    max-width: 1100px;
+    text-align: center;
+    margin: 0 auto 60px;
+}
+
+.transform__sub-text--trt {
+    max-width: 1200px;
 }
 
 .transform__title {
@@ -3171,13 +3177,13 @@ body {
     flex-direction: column;
     gap: 12px;
     align-items: flex-start;
+    width: 100%;
 }
 
 .price-item__check {
     display: flex;
     align-items: center;
     gap: 10px;
-    max-width: 300px;
     color: var(--dark-blue, #071867);
     font-family: 'Montserrat';
     font-size: 16px;
