@@ -248,12 +248,46 @@
             </div>
             <div class="main_images_content" data-aos="fade-down" data-aos-duration="1000">
                 <div class="results">
-                    <img class="results__logo" src="./img/main/logo.svg" alt="small-logo">
-                    <div class="results__wrapper">
-                        <img class="results__img" src="./img/main/man1.png" alt="img">
-                        <img class="results__img" src="./img/main/man2.png" alt="img">
-                        <span class="results__text">Before</span>
-                        <span class="results__text">After</span>
+
+                    <div class="swiper swiper-results">
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="results__img-wrap">
+                                        <img class="results__logo" src="./img/main/logo.svg" alt="small-logo">
+                                        <spa class="results__text results__text--title">52 years old</spa>
+                                        <span class="results__text">6 Month Transformation</span>
+                                    </div>
+                                    <div class="results__wrapper">
+
+                                        <img class="results__img" src="./img/main/man1.png" alt="img">
+                                        <img class="results__img" src="./img/main/man2.png" alt="img">
+                                        <span class="results__info">Before</span>
+                                        <span class="results__info">After</span>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="swiper-slide">
+                                <div>
+                                    <div class="results__img-wrap">
+                                        <img class="results__logo" src="./img/main/logo.svg" alt="small-logo">
+                                        <spa class="results__text results__text--title">52 years old</spa>
+                                        <span class="results__text">6 Month Transformation</span>
+                                    </div>
+                                    <div class="results__wrapper">
+
+                                        <img class="results__img" src="./img/main/girl1.png" alt="img">
+                                        <img class="results__img" src="./img/main/girl2.png" alt="img">
+                                        <span class="results__info">Before</span>
+                                        <span class="results__info">After</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="swiper-pagination"></div>
                     </div>
                 </div>
             </div>
@@ -858,6 +892,11 @@
                         class="footer-icon_link">
                         <img src="img/footer/inst.svg" alt="icon" class="footer-icon_icon" />
                     </a>
+
+                    <a href="https://www.instagram.com/aspiremeds?igsh=cmh6dTg0Mm0wYmg3" target="_blank"
+                        class="footer__icon-link">
+                        <img src="../images/footer/ic_youtube.svg" alt="icon" class="footer__icon-img" />
+                    </a>
                 </div>
             </div>
             <div class="footer_navigation">
@@ -1067,6 +1106,15 @@
             margin-bottom: 30px;
         }
     </style>
+
+    <script>
+        var swiper = new Swiper(".swiper-results", {
+            spaceBetween: 10,
+            pagination: {
+                el: ".results .swiper-pagination",
+            },
+        });
+    </script>
 </body>
 
 </html>
